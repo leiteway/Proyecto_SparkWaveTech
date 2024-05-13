@@ -1,3 +1,4 @@
+// share.js
 function Share(description) {
     const url = window.location.href;
 
@@ -13,7 +14,9 @@ function Share(description) {
                     },
                 ],
             })
-              .catch(err => alert("Error Sharing: " + err))
+             .catch(err => alert("Error Sharing: " + err))
+        } else {
+            alert("La función de compartir no está disponible en este navegador.");
         }
     }
 
